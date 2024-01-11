@@ -2,6 +2,9 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\TeamController;
+use App\Http\Controllers\PartnerController;
+use App\Http\Controllers\FaqController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -15,4 +18,13 @@ use App\Http\Controllers\HomeController;
 
 Route::get('/', 
     [HomeController::class, 'index']
-);
+)->name('home');
+Route::get('/team', 
+    [TeamController::class, 'index']
+)->name('team');
+Route::get('/partners', 
+    [PartnerController::class, 'index']
+)->name('partners');
+Route::get('/faqs', 
+    [FaqController::class, 'index']
+)->name('faq');

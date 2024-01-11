@@ -1,5 +1,9 @@
 @extends('layouts.master', ['title' => 'Home'])
-
+<style>
+    .element{
+        transition: height 1s;
+    }
+</style>
 @section('content')
     <div class="before:content-[''] before:absolute before:bottom-0 before:left-0 before:right-0 before:bg-heroSvg2 before:bg-bottom before:bg-repeat-x before:top-0 relative bg-homeHero   after:content-[''] after:bg-top-center after:absolute after:top-0 after:left-0 after:right-0 after:bottom-0 after:bg-heroSvg1 bg-cover bg-center" style="width: 100%; height: calc(100vh - 175px);" >
         <div class="relative z-10 h-full max-w-[1024px] w-full p-4 mx-auto flex justify-center items-center">
@@ -12,14 +16,14 @@
                         From our Pet Transport Services team, who specialize in making all the travel arrangements for your pet, to our Pet Handlers, who care for your pet during the travel process – we all love your furry
                     </p>
                 </div>
-                <div class="bg-second w-full h-full px-8 pt-4 pb-8 mt-3  space-y-6 rounded-sm">
+                <div class="bg-second w-full  px-8 pt-4 pb-8 mt-3  space-y-6 rounded-sm">
                     <div class="flex items-center gap-6">
                         <h3 class="text-white m-0 font-semibold text-3xl font-work">
                             Get a pet travel quote 
                         </h3>
-                        <i class="w-10 h-10 ">
+                        <div class="w-10 h-10 ">
                             <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 256 256" class="rotate-90 fill-primary"><path   d="M235.58 128.84L160 91.06V48a32 32 0 0 0-64 0v43.06l-75.58 37.78A8 8 0 0 0 16 136v32a8 8 0 0 0 9.57 7.84L96 161.76v18.93l-13.66 13.65A8 8 0 0 0 80 200v32a8 8 0 0 0 11 7.43l37-14.81l37 14.81a8 8 0 0 0 11-7.43v-32a8 8 0 0 0-2.34-5.66L160 180.69v-18.93l70.43 14.08A8 8 0 0 0 240 168v-32a8 8 0 0 0-4.42-7.16M224 158.24l-70.43-14.08A8 8 0 0 0 144 152v32a8 8 0 0 0 2.34 5.66L160 203.31v16.87l-29-11.61a8 8 0 0 0-5.94 0L96 220.18v-16.87l13.66-13.65A8 8 0 0 0 112 184v-32a8 8 0 0 0-9.57-7.84L32 158.24v-17.3l75.58-37.78A8 8 0 0 0 112 96V48a16 16 0 0 1 32 0v48a8 8 0 0 0 4.42 7.16L224 140.94Z"/></svg>
-                        </i>
+                        </div>
                         
                     </div>
                     <div class="flex gap-4 items-center">
@@ -280,6 +284,94 @@
             </div>
         </div>
     </section>
+    
+    <section class="w-full px-4">
+        <h2 class="text-center text-3xl text-slate-800 font-bold">
+            FAQs
+        </h2>
+        <div class="w-full max-w-[1024px] mx-auto space-y-3">
+            <div class="item py-4 border-b border-black overflow-hidden cursor-pointer">
+                <div class="flex justify-between items-center">
+                    <h3 class="text-2xl font-medium">
+                        Is it safe for pets to fly?
+                    </h3>
+                    <div class="text-primary mr-2 font-semibold text-xl border w-8 h-8 flex justify-center items-center text-center rounded-full border-2 border-primary">
+                        +
+                    </div>
+                </div>
+                <div class="element h-0" >
+                    <p class="py-4 desc" >
+                        Air travel is as safe for pets as it is for people. Airlines have staff that are trained in pet shipping and who will care for your beloved pet on their journey. And, of course, we take care of everything to ensure your pet has a happy and safe journey.
+                    </p>
+                </div>
+                
+            </div>
+            <div class="item py-4 border-b border-black overflow-hidden cursor-pointer">
+                <div class="flex justify-between items-center">
+                    <h3 class="text-2xl font-medium">
+                        Where does my pet travel on the plane?
+                    </h3>
+                    <div class="text-primary mr-2 font-semibold text-xl border w-8 h-8 flex justify-center items-center text-center rounded-full border-2 border-primary">
+                        +
+                    </div>
+                </div>
+                <div class="element h-0" >
+                    <p class="py-4 desc" >
+                        Your pet will travel in a special cargo compartment within the aircraft. This compartment is both climate-controlled and pressurized for your pet’s safety and comfort, and it’s on the same air circulation system as the cabin.
+                    </p>
+                </div>
+                
+            </div>
+            <div class="item py-4 border-b border-black overflow-hidden cursor-pointer">
+                <div class="flex justify-between items-center">
+                    <h3 class="text-2xl font-medium">
+                        Where can I get a strong, comfortable travel crate?
+                    </h3>
+                    <div class="text-primary mr-2 font-semibold text-xl border w-8 h-8 flex justify-center items-center text-center rounded-full border-2 border-primary">
+                        +
+                    </div>
+                </div>
+                <div class="element h-0" >
+                    <p class="py-4 desc" >
+                        Pet Express can provide strong, sturdy and comfortable travel crates to our clients that provide protection during loading and unloading and give your precious pets plenty of space to stretch out and move around. Our crates will keep your pet secure where some lightweight crates sourced from pet stores may flex during handling, enabling the door to accidentally open.
+                    </p>
+                </div>
+                
+            </div>
+            <div class="item py-4 border-b border-black overflow-hidden cursor-pointer">
+                <div class="flex justify-between items-center">
+                    <h3 class="text-2xl font-medium">
+                        How much will it cost to relocate my pet?
+                    </h3>
+                    <div class="text-primary mr-2 font-semibold text-xl border w-8 h-8 flex justify-center items-center text-center rounded-full border-2 border-primary">
+                        +
+                    </div>
+                </div>
+                <div class="element h-0" >
+                    <p class="py-4 desc" >
+                        The price for pet transport can vary substantially depending on the location, so we’ll need to provide you with a specific quote to suit your needs. Our pet shipping services are always competitive, and we try to work within your budget without compromising the safety and comfort of your animals.
+                    </p>
+                </div>
+                
+            </div>
+            <div class="item py-4 border-b border-black overflow-hidden cursor-pointer">
+                <div class="flex justify-between items-center">
+                    <h3 class="text-2xl font-medium">
+                        Will my pet have to stay in quarantine?
+                    </h3>
+                    <div class="text-primary mr-2 font-semibold text-xl border w-8 h-8 flex justify-center items-center text-center rounded-full border-2 border-primary">
+                        +
+                    </div>
+                </div>
+                <div class="element h-0" >
+                    <p class="py-4 desc" >
+                        Only a handful of countries actually require your pet to stay in quarantine upon arrival. These are the strict rabies-free countries like Australia, New Zealand and Singapore. If you’re relocating your pet to one of these countries, they may need to spend a few days in quarantine. But in most other countries, there are no quarantine requirements at all.
+                    </p>
+                </div>
+                
+            </div>
+        </div>
+    </section>
     <section class="bg-slate-100 w-full py-24 px-4">
         <div class="w-full max-w-[1024px] mx-auto">
             <div class="grid grid-cols-2 gap-14">
@@ -312,17 +404,17 @@
     </section>
 
     <div class="before:content-[''] before:absolute before:bottom-0 before:left-0 before:right-0 before:bg-heroSvg2 before:bg-bottom before:bg-repeat-x before:top-0 relative bg-petBanner   after:content-[''] after:bg-top-center after:absolute after:top-0 after:left-0 after:right-0 after:bottom-0 after:bg-heroSvg1 bg-cover bg-center" style="width: 100%;" >
-        <div class="relative z-10 h-full  w-full p-8 mx-auto flex justify-center items-center">
+        <div class="relative z-10 w-full p-8 mx-auto flex justify-center items-center">
             <div class="py-12 w-10/12">
                 
-                <div class="bg-second w-full h-full px-8 pt-4 pb-8 mt-3  space-y-6 rounded-sm">
+                <div class="bg-second w-full px-8 pt-4 pb-8 mt-3  space-y-6 rounded-sm">
                     <div class="flex items-center gap-6">
                         <h3 class="text-white m-0 font-semibold text-3xl font-work">
                             Get a pet travel quote 
                         </h3>
-                        <i class="w-10 h-10 ">
+                        <div class="w-10 h-10 ">
                             <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 256 256" class="rotate-90 fill-primary"><path   d="M235.58 128.84L160 91.06V48a32 32 0 0 0-64 0v43.06l-75.58 37.78A8 8 0 0 0 16 136v32a8 8 0 0 0 9.57 7.84L96 161.76v18.93l-13.66 13.65A8 8 0 0 0 80 200v32a8 8 0 0 0 11 7.43l37-14.81l37 14.81a8 8 0 0 0 11-7.43v-32a8 8 0 0 0-2.34-5.66L160 180.69v-18.93l70.43 14.08A8 8 0 0 0 240 168v-32a8 8 0 0 0-4.42-7.16M224 158.24l-70.43-14.08A8 8 0 0 0 144 152v32a8 8 0 0 0 2.34 5.66L160 203.31v16.87l-29-11.61a8 8 0 0 0-5.94 0L96 220.18v-16.87l13.66-13.65A8 8 0 0 0 112 184v-32a8 8 0 0 0-9.57-7.84L32 158.24v-17.3l75.58-37.78A8 8 0 0 0 112 96V48a16 16 0 0 1 32 0v48a8 8 0 0 0 4.42 7.16L224 140.94Z"/></svg>
-                        </i>
+                        </div>
                         
                     </div>
                     <div class="flex gap-4 items-center">
@@ -354,4 +446,20 @@
 
 @push('scripts.footer')
     <script src="https://code.jquery.com/jquery.min.js"></script>
-@endpush
+<script>
+const items = document.querySelectorAll('.item')
+items.forEach(el => {
+    el.onclick = () => {
+        let desc = el.querySelector('.element')
+        if (desc.classList.contains("h-0")) {
+            desc.classList.remove("h-0")
+            desc.classList.add("h-28")
+        } else if(desc.classList.contains("h-28")) {
+            desc.classList.remove("h-28")
+            desc.classList.add("h-0")
+        }
+    }
+});
+</script>
+
+    @endpush

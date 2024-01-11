@@ -7,6 +7,10 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Laravel\Sanctum\HasApiTokens;
+use App\Models\Pet;
+use App\Models\Order;
+use App\Models\TravelDetails;
+
 
 class User extends Authenticatable
 {
@@ -18,7 +22,11 @@ class User extends Authenticatable
      * @var array<int, string>
      */
     protected $fillable = [
-        'name',
+        'fullName',
+        'lastName',
+        'phoneHome',
+        'phoneMobile',
+        'reason',
         'email',
         'password',
     ];
@@ -42,4 +50,14 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
         'password' => 'hashed',
     ];
+
+    public function pets() 
+    {
+        return $this->hasMany(Pet::class);
+    }
+    
+    public function travelDetails()
+    {
+        return $this->hasMany(TravelDetails::class);
+    }
 }
