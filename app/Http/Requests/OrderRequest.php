@@ -11,7 +11,7 @@ class OrderRequest extends FormRequest
      */
     public function authorize(): bool
     {
-        return false;
+        return true;
     }
 
     /**
@@ -23,27 +23,28 @@ class OrderRequest extends FormRequest
     {
         return [
             //
-            "senderLocation" => "required",
-            "receiverFullName" => ['required', string],
+            "senderLocation" => 'required',
+        "senderFullname" => 'required',
+            "senderMail" => ['required', 'email'],
+            "receiverFullName" => ['required', "string"],
             "receiverLocation" => ['required'],
             "receiverPhone" => ['required'],
             "origin" => ['required'],
             "destination" => 'required',
             "weight" => 'required',
+            "quantity" => 'required',
             "product" => 'required',
             "totalFreight" => 'required',
+            "departureTime" => 'required',
             "pickUpDate" => 'required',
+            "pickUpTime" => 'required',
+            "expectedDeliveryDate" => 'required',
             "package" => 'required',
             "carrier" => 'required',
             "shipmentMode" => 'required',
-            "quantity" => 'required',
-            "expexctedDeliveryDate" => 'required',
-            "pickUpTime" => 'required',
-            "status" => 'required',
             "shipmentType" => 'required',
             "carrierRef" => 'required',
-            "paymentMode" => 'required',
-            "departureTime" => 'required'
+            "paymentMode" => 'required'
         ];
     }
 }

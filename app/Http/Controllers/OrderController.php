@@ -3,22 +3,69 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Requests\OrderRequest;
+use App\Http\Requests\OrderRequest;
+use Illuminate\Validation\Rule;
 use App\Models\Order;
 
 class OrderController extends Controller
 {
     //
+    public function myForm()
+    {
+        
+        return view('creator.create');
+    }
     public function index(){
-        return view('orders')->with('orders', Order::paginate(10));
+        $orders = Order::paginate(10);
+        return view('creator.lists', compact('orders'));
     }
-    public function store(OrderRequest $request) {
-        $order = Order::create($request->validated()); 
+
+//     public function index(){
+//         $orders = Order::paginate(10);
+//         return view('creator.lists')->with(compact('orders'));
+//     }
+
+    public function store(Request $request) {
+        
+       $order = $request->validate([
+        "senderLocation" => 'required',
+        "senderFullname" => 'required',
+            "senderMail" => ['required', 'email'],
+            "receiverFullName" => ['required', "string"],
+            "receiverLocation" => ['required'],
+            "receiverPhone" => ['required'],
+            "origin" => ['required'],
+            "destination" => 'required',
+            "weight" => 'required',
+            "quantity" => 'required',
+            "product" => 'required',
+            "totalFreight" => 'required',
+            "departureTime" => 'required',
+            "pickUpDate" => 'required',
+            "pickUpTime" => 'required',
+            "expectedDeliveryDate" => 'required',
+            "package" => 'required',
+            "carrier" => 'required',
+            "shipmentMode" => 'required',
+            "shipmentType" => 'required',
+            "carrierRef" => 'required',
+            "paymentMode" => 'required'
+        ]);
+        $order['order_id'] = rand()."-PetExpress";
+        // dd($order);
+         Order::create($order); 
+        return redirect('/admin/order/view');
     }
+
     public function show(Request $request, $order){
         return Order::whereId($order)->firstOrFail();
-    }   
-    public function edit(OrderRequest $r, $order){
+    }  
+    
+    public function editForm($id){
+        $order = Order::whereId($id)->firstOrFail();
+        return view('creator._form', compact('order'));
+    }
+    public function edit(OrderRequest $r,Order $order){
         $up = $order->update($r->validated());
     } 
     public function destroy(Order $order){
