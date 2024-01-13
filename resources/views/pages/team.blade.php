@@ -5,10 +5,11 @@
     }
 </style>
 @section('content')
+
     <div class="before:content-[''] before:absolute before:bottom-0 before:left-0 before:right-0 before:bg-heroSvg2 before:bg-bottom before:bg-repeat-x before:top-0 relative bg-homeHero   after:content-[''] after:bg-top-center after:absolute after:top-0 after:left-0 after:right-0 after:bottom-0 after:bg-heroSvg1 bg-cover bg-center" style="width: 100%; height: calc(100vh - 175px);" >
         <div class="relative z-10 h-full max-w-[1024px] w-full p-4 mx-auto flex justify-center items-center">
             <div class="">
-                <div class="space-y-4 w-2/3">
+                <div class="space-y-4 md:w-2/3">
                     <h2 class="text-white font-semibold font-work text-5xl leading-12">
                         Our Caring Team
                     </h2>
@@ -25,7 +26,7 @@
 
     <section class="bg-slate-100 w-full py-24 px-4">
         <div class="w-full max-w-[1024px] mx-auto">
-            <div class="grid grid-cols-2 gap-14 place-center items-center">
+            <div class="grid md:grid-cols-2 gap-14 place-center items-center">
                 <div class="space-y-5">
                     <h2 class="text-slate-800 text-3xl font-medium">
                         Caring for your pets is our job.
@@ -43,12 +44,11 @@
     </section>
     
     <div class="before:content-[''] before:absolute before:bottom-0 before:left-0 before:right-0 before:bg-heroSvg2 before:bg-bottom before:bg-repeat-x before:top-0 relative bg-teamBanner  after:content-[''] after:bg-top-center after:absolute after:top-0 after:left-0 after:right-0 after:bottom-0 after:bg-heroSvg1 bg-cover bg-center" style="width: 100%;" >
-        <div class="relative z-10 w-full p-8 mx-auto flex justify-center items-center">
-            <div class="py-12 w-10/12">
-                
-                <div class="bg-second w-full px-8 pt-4 pb-8 mt-3  space-y-6 rounded-sm">
+        <div class="relative z-10 w-full md:p-8 p-4 mx-auto flex justify-center items-center">
+            <div class="py-12 md:w-10/12 w-full">
+                <div class="bg-second w-full  md:px-8 px-4 pt-4 pb-8 mt-3  space-y-6 rounded-sm">
                     <div class="flex items-center gap-6">
-                        <h3 class="text-white m-0 font-semibold text-3xl font-work">
+                        <h3 class="text-white m-0 font-semibold md:text-3xl text-xl font-work">
                             Get a pet travel quote 
                         </h3>
                         <div class="w-10 h-10 ">
@@ -56,22 +56,35 @@
                         </div>
                         
                     </div>
-                    <div class="flex gap-4 items-center">
-                        <div class="bg-white rounded-sm px-3 py-3 flex items-center w-full gap-4">
+                    <div class="md:flex gap-4 space-y-2 items-center">
+                        <div class="bg-white rounded-sm px-3 py-1 flex items-center w-full gap-4">
                             <label for="from"> FROM</label>
-                            <input type="text" class="w-full outline-none" placeholder="Start typing to find a location">
+                            <input type="text" class="w-full outline-none border-none" placeholder="Start typing to find a location">
                         </div>
-                        <div class="bg-white rounded-sm px-3 py-3 flex items-center gap-4 w-full">
+                        <div class="bg-white rounded-sm px-3 py-1 flex items-center gap-4 w-full ">
                             <label for="from"> TO</label>
-                            <input type="text" class="w-full outline-none" placeholder="Start typing to find a location">
+                            <input type="text" class="w-full outline-none border-none" placeholder="Start typing to find a location">
                         </div>
-                        <div class="bg-primary rounded-sm px-6 py-3.5 flex items-center ">
-                            <button class="text-white">
+                        <div class="bg-second ring-primary ring-1 rounded-sm px-6 py-3.5 flex items-center ">
+                            <button class="text-white hidden md:block">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
                                     <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
                                   </svg>
-                                  
+                                </button>
+                            <button class="text-white md:hidden flex items-center justify-center w-full">
+                                <p class="text-center text-white font-medium text-md">Request quote</p>
                             </button>
+                        </div>
+                        
+                        <div class="bg-primary rounded-sm px-6 py-3.5 flex items-center ">
+                            <a href="{{route('track.order')}}" class="text-white md:block hidden">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+                                  </svg>                                      
+                            </a>
+                            <a href="{{route('track.order')}}" class="text-white md:hidden flex items-center justify-center w-full">
+                                <p class="text-center text-white font-medium text-md">Track order</p>                                         
+                            </a>
                         </div>
                     </div>
                 </div>

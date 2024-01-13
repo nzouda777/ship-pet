@@ -15,10 +15,11 @@
 @vite('resources/css/vimeo.css')
     <title>Demo - {{ $title ?? 'demo' }}</title>
 </head>
-<body class="mx-auto font-work w-full max-w-screen-4xl space-y-12">
-    @include('layouts.partials._nav', ['element' => 'the navbar'])
-    @yield('content')
-
+<body class="mx-auto font-work w-full max-w-screen-4xl">
+    @include('layouts.partials._nav')
+    <div class="space-y-12 mt-20 md:mt-0">
+        @yield('content')
+    </div>
     <footer>
         @yield('footer')
     </footer>

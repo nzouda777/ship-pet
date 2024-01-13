@@ -5,20 +5,21 @@
     }
 </style>
 @section('content')
-    <div class="before:content-[''] before:absolute before:bottom-0 before:left-0 before:right-0 before:bg-heroSvg2 before:bg-bottom before:bg-repeat-x before:top-0 relative bg-homeHero   after:content-[''] after:bg-top-center after:absolute after:top-0 after:left-0 after:right-0 after:bottom-0 after:bg-heroSvg1 bg-cover bg-center" style="width: 100%; height: calc(100vh - 175px);" >
+    <div class=" before:content-[''] before:absolute before:bottom-0 before:left-0 before:right-0 before:bg-heroSvg2 before:bg-bottom before:bg-repeat-x before:top-0 relative bg-homeHero   after:content-[''] after:bg-top-center after:absolute after:top-0 after:left-0 after:right-0 after:bottom-0 after:bg-heroSvg1 bg-cover bg-center" style="width: 100%; height: calc(100vh - 175px);" >
         <div class="relative z-10 h-full max-w-[1024px] w-full p-4 mx-auto flex justify-center items-center">
-            <div class="">
-                <div class="space-y-4 w-2/3">
-                    <h2 class="text-white font-semibold font-work text-5xl leading-12">
+            <div class="mt-4" id="quote">
+                <div class="space-y-4 md:w-2/3">
+                    <h2 class="text-white font-semibold font-work md:text-5xl text-4xl leading-12">
                         Our team cares for your pet as much as you do.
                     </h2>
-                    <p class="text-white text-xl mt-0 font-work">
+                    <p class="text-white md:text-xl mt-0 font-work">
                         From our Pet Transport Services team, who specialize in making all the travel arrangements for your pet, to our Pet Handlers, who care for your pet during the travel process – we all love your furry
                     </p>
                 </div>
-                <div class="bg-second w-full  px-8 pt-4 pb-8 mt-3  space-y-6 rounded-sm">
+                
+                <div class="bg-second w-full  md:px-8 px-4 pt-4 pb-8 mt-3  space-y-6 rounded-sm">
                     <div class="flex items-center gap-6">
-                        <h3 class="text-white m-0 font-semibold text-3xl font-work">
+                        <h3 class="text-white m-0 font-semibold md:text-3xl text-xl font-work">
                             Get a pet travel quote 
                         </h3>
                         <div class="w-10 h-10 ">
@@ -26,34 +27,47 @@
                         </div>
                         
                     </div>
-                    <div class="flex gap-4 items-center">
-                        <div class="bg-white rounded-sm px-3 py-3 flex items-center w-full gap-4">
+                    <div class="md:flex gap-4 space-y-2 items-center">
+                        <div class="bg-white rounded-sm px-3 py-1 flex items-center w-full gap-4">
                             <label for="from"> FROM</label>
-                            <input type="text" class="w-full outline-none" placeholder="Start typing to find a location">
+                            <input type="text" class="w-full outline-none border-none" placeholder="Start typing to find a location">
                         </div>
-                        <div class="bg-white rounded-sm px-3 py-3 flex items-center gap-4 w-full">
+                        <div class="bg-white rounded-sm px-3 py-1 flex items-center gap-4 w-full ">
                             <label for="from"> TO</label>
-                            <input type="text" class="w-full outline-none" placeholder="Start typing to find a location">
+                            <input type="text" class="w-full outline-none border-none" placeholder="Start typing to find a location">
                         </div>
-                        <div class="bg-primary rounded-sm px-6 py-3.5 flex items-center ">
-                            <button class="text-white">
+                        <div class="bg-second ring-primary ring-1 rounded-sm px-6 py-3.5 flex items-center ">
+                            <button class="text-white hidden md:block">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
                                     <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
                                   </svg>
-                                  
+                                </button>
+                            <button class="text-white md:hidden flex items-center justify-center w-full">
+                                <p class="text-center text-white font-medium text-md">Request quote</p>
                             </button>
+                        </div>
+                        
+                        <div class="bg-primary rounded-sm px-6 py-3.5 flex items-center ">
+                            <a href="{{route('track.order')}}" class="text-white md:block hidden">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+                                  </svg>                                      
+                            </a>
+                            <a href="{{route('track.order')}}" class="text-white md:hidden flex items-center justify-center w-full">
+                                <p class="text-center text-white font-medium text-md">Track order</p>                                         
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <section class="w-full mx-auto px-1 space-y-10">
-        <h2 class="text-3xl text-slate-800 text-center font-medium">
+    <section class="w-full mx-auto px-4 space-y-10">
+        <h2 class="md:text-3xl text-2xl text-slate-800 text-center font-medium">
             Why choose Pet Express for your International Pet Transport Service?
         </h2>
         <div class="w-full max-w-[1024px] p-4 mx-auto">
-            <div class="grid grid-cols-2 gap-12">
+            <div class="grid md:grid-cols-2 grid-cols-1 gap-12">
                 <div class="flex items-start gap-6">
                     <div class="">
                         <img src="https://pet-express.com/wp-content/uploads/2021/04/caring.svg" alt="">
@@ -135,16 +149,16 @@
                 </div>
             </div>
             <div class="flex mt-8 items-center justify-center">
-                <a href="#" class="bg-primary text-center inline-block px-6 py-3 text-white font-bold rounded-md">Request quote</a>
+                <a href="#quote" class="bg-primary text-center inline-block px-6 py-3 text-white font-bold rounded-md">Request quote</a>
             </div>
             
         </div>
     </section>
     <div class="bg-slate-100 w-full h-full px-4">
         <div class="max-w-[1024px] w-full mx-auto">
-            <div class="grid grid-cols-2 py-20 gap-14 place-center">
-                <div class="space-y-8 ">
-                    <h2 class="text-5xl font-medium">
+            <div class="grid md:grid-cols-2 grid-cols-1 py-20 gap-14 place-center">
+                <div class="md:space-y-8 space-y-5">
+                    <h2 class="md:text-5xl text-4xl font-medium">
                         We are the <span class="text-primary">pet transport</span> people.
                     </h2>
                     <p class="leading-6">
@@ -154,10 +168,7 @@
                <div class="w-full !relative">
                 <div class="is-layout-flow wp-block-column !w-full !h-full">
                     <div  aria-hidden="true" class="wp-block-spacer"></div>
-                    
-                    
-                    
-                    <iframe loading="lazy" title="vimeo-player" src="https://player.vimeo.com/video/797800344?h=29b2b60281&amp;portrait=0&amp;byline=0&amp;title=0"   frameborder="0" allowfullscreen="" data-rocket-lazyload="fitvidscompatible" data-lazy-src="https://player.vimeo.com/video/797800344?h=29b2b60281&amp;portrait=0&amp;byline=0&amp;title=0" data-ll-status="loaded" class="entered lazyloaded !w-full !h-full object-cover"></iframe><noscript><iframe title="vimeo-player" src="https://player.vimeo.com/video/797800344?h=29b2b60281&amp;portrait=0&amp;byline=0&amp;title=0" width="640" height="360" frameborder="0" allowfullscreen=""></iframe></noscript>
+                    <iframe loading="lazy" title="vimeo-player" src="https://player.vimeo.com/video/797800344?h=29b2b60281&amp;portrait=0&amp;byline=0&amp;title=0"   frameborder="0" allowfullscreen="" data-rocket-lazyload="fitvidscompatible" data-lazy-src="https://player.vimeo.com/video/797800344?h=29b2b60281&amp;portrait=0&amp;byline=0&amp;title=0" data-ll-status="loaded" class="entered lazyloaded !w-full !h-full object-cover"></iframe><noscript><iframe class="entered lazyloaded !w-full !h-full object-cover" title="vimeo-player" src="https://player.vimeo.com/video/797800344?h=29b2b60281&amp;portrait=0&amp;byline=0&amp;title=0"  frameborder="0" allowfullscreen=""></iframe></noscript>
                     </div>
                </div>
             </div>
@@ -165,17 +176,17 @@
     </div>
     <section class="w-full px-4 max-w-[1024px] mx-auto">
         <div class="flex justify-center items-center text-center">
-           <div class="lg:space-y-16 space-y-10">
-            <div class="lg:space-y-7 space-y-6">
-                <h2 class="font-medium lg:text-3xl text-2xl text-slate-800">
+           <div class="md:space-y-16 space-y-10">
+            <div class="md:space-y-7 space-y-6">
+                <h2 class="font-medium md:text-3xl text-2xl text-slate-800">
                     How pet transport services work
                 </h2>
-                <p class="leading-6 lg:w-2/3 w-10/12 mx-auto lg:text-lg text-md text-slate-800">
+                <p class="leading-6 md:w-2/3 w-10/12 mx-auto md:text-lg text-md text-slate-800">
                     Pet Express can take care of the entire process and provide a pet shipping service that is stress free – for both owners and pets!
                 </p>
             </div>
                 <div class="mt-2">
-                    <a href="#" class="capitalize lg:px-8 lg:py-5 rounded-sm py-4 px-6 lg:w-fit w-10/12 inline-block font-bold bg-thirdly text-white">
+                    <a href="#" class="capitalize md:px-8 md:py-5 rounded-sm py-4 px-6 md:w-fit w-10/12 inline-block font-bold bg-thirdly text-white">
                         international pet travel
                     </a>
                 </div>
@@ -183,7 +194,7 @@
         </div>
     </section>
     <section class="w-full px-4 max-w-[1024px] mt-16 mx-auto">
-        <div class="grid lg:grid-cols-4 grid-cols-1 gap-16">
+        <div class="grid md:grid-cols-4 grid-cols-1 gap-16">
             <div class="space-y-3 flex flex-col items-center justify-center text-center">
                 <img src="https://pet-express.com/wp-content/themes/pet-express/components/assets/images/travel-crate-icon.svg" alt="">
                 <h4 class="text-second font-medium uppercase">
@@ -233,7 +244,7 @@
                         Moving your beloved pets can be emotional and confusing, especially when every country has their own set of rules and regulations. We transport pets cross country or anywhere in the world. And whether they’re going to Sydney, Australia, Florida, USA, or London, UK, we always ensure the process is smooth and seamless for both you and your multiple pets, no matter where you need them to go.
                     </p>
                 </div>
-                <div class="lg:grid lg:grid-cols-5 lg:place-center flex flex-col items-center justify-center text-center  gap-16">
+                <div class="md:grid md:grid-cols-5 md:place-center flex flex-col items-center justify-center text-center  gap-16">
                     <div class="space-y-6 text-center">
                         <img src="https://pet-express.com/wp-content/uploads/2021/04/hawaii@2x.jpg" alt="">
                         <h2 class="text-xl uppercase text-white mx-auto w-10/12">Hawaii</h2>
@@ -263,7 +274,7 @@
     </section>
     <section class="bg-slate-100 w-full py-24 px-4">
         <div class="w-full max-w-[1024px] mx-auto">
-            <div class="grid grid-cols-2 gap-14">
+            <div class="grid md:grid-cols-2 grid-cols-1 gap-14">
                 <div class="space-y-8">
                     <h2 class="text-slate-800 text-3xl font-medium">
                         What We’re Talking About on the Blog
@@ -290,12 +301,12 @@
             FAQs
         </h2>
         <div class="w-full max-w-[1024px] mx-auto space-y-3">
-            <div class="item py-4 border-b border-black overflow-hidden cursor-pointer">
+            <div class="item md:py-4 py-2 border-b border-black overflow-hidden cursor-pointer">
                 <div class="flex justify-between items-center">
-                    <h3 class="text-2xl font-medium">
+                    <h3 class="md:text-2xl text-xl font-medium">
                         Is it safe for pets to fly?
                     </h3>
-                    <div class="text-primary mr-2 font-semibold text-xl border w-8 h-8 flex justify-center items-center text-center rounded-full border-2 border-primary">
+                    <div class="text-primary mr-2 font-semibold text-xl border w-6 h-6 md:w-8 md:h-8 flex justify-center items-center text-center rounded-full border-2 border-primary">
                         +
                     </div>
                 </div>
@@ -306,12 +317,12 @@
                 </div>
                 
             </div>
-            <div class="item py-4 border-b border-black overflow-hidden cursor-pointer">
+            <div class="item md:py-4 py-2 border-b border-black overflow-hidden cursor-pointer">
                 <div class="flex justify-between items-center">
-                    <h3 class="text-2xl font-medium">
+                    <h3 class="md:text-2xl text-xl font-medium">
                         Where does my pet travel on the plane?
                     </h3>
-                    <div class="text-primary mr-2 font-semibold text-xl border w-8 h-8 flex justify-center items-center text-center rounded-full border-2 border-primary">
+                    <div class="text-primary mr-2 font-semibold text-xl border w-6 h-6 md:w-8 md:h-8 flex justify-center items-center text-center rounded-full border-2 border-primary">
                         +
                     </div>
                 </div>
@@ -322,12 +333,12 @@
                 </div>
                 
             </div>
-            <div class="item py-4 border-b border-black overflow-hidden cursor-pointer">
+            <div class="item md:py-4 py-2 border-b border-black overflow-hidden cursor-pointer">
                 <div class="flex justify-between items-center">
-                    <h3 class="text-2xl font-medium">
+                    <h3 class="md:text-2xl text-xl font-medium">
                         Where can I get a strong, comfortable travel crate?
                     </h3>
-                    <div class="text-primary mr-2 font-semibold text-xl border w-8 h-8 flex justify-center items-center text-center rounded-full border-2 border-primary">
+                    <div class="text-primary mr-2 font-semibold text-xl border w-6 h-6 md:w-8 md:h-8 flex justify-center items-center text-center rounded-full border-2 border-primary">
                         +
                     </div>
                 </div>
@@ -338,12 +349,12 @@
                 </div>
                 
             </div>
-            <div class="item py-4 border-b border-black overflow-hidden cursor-pointer">
+            <div class="item md:py-4 py-2 border-b border-black overflow-hidden cursor-pointer">
                 <div class="flex justify-between items-center">
-                    <h3 class="text-2xl font-medium">
+                    <h3 class="md:text-2xl text-xl font-medium">
                         How much will it cost to relocate my pet?
                     </h3>
-                    <div class="text-primary mr-2 font-semibold text-xl border w-8 h-8 flex justify-center items-center text-center rounded-full border-2 border-primary">
+                    <div class="text-primary mr-2 font-semibold text-xl border w-6 h-6 md:w-8 md:h-8 flex justify-center items-center text-center rounded-full border-2 border-primary">
                         +
                     </div>
                 </div>
@@ -354,12 +365,12 @@
                 </div>
                 
             </div>
-            <div class="item py-4 border-b border-black overflow-hidden cursor-pointer">
+            <div class="item md:py-4 py-2 border-b border-black overflow-hidden cursor-pointer">
                 <div class="flex justify-between items-center">
-                    <h3 class="text-2xl font-medium">
+                    <h3 class="md:text-2xl text-xl font-medium">
                         Will my pet have to stay in quarantine?
                     </h3>
-                    <div class="text-primary mr-2 font-semibold text-xl border w-8 h-8 flex justify-center items-center text-center rounded-full border-2 border-primary">
+                    <div class="text-primary mr-2 font-semibold text-xl border w-6 h-6 md:w-8 md:h-8 flex justify-center items-center text-center rounded-full border-2 border-primary">
                         +
                     </div>
                 </div>
@@ -374,7 +385,7 @@
     </section>
     <section class="bg-slate-100 w-full py-24 px-4">
         <div class="w-full max-w-[1024px] mx-auto">
-            <div class="grid grid-cols-2 gap-14">
+            <div class="grid md:grid-cols-2 grid-cols-1 gap-14">
                 
                 <div class="w-full">
                     <img src="https://pet-express.com/wp-content/uploads/2021/04/home-transport.jpg" alt="">
@@ -403,13 +414,12 @@
         </div>
     </section>
 
-    <div class="before:content-[''] before:absolute before:bottom-0 before:left-0 before:right-0 before:bg-heroSvg2 before:bg-bottom before:bg-repeat-x before:top-0 relative bg-petBanner   after:content-[''] after:bg-top-center after:absolute after:top-0 after:left-0 after:right-0 after:bottom-0 after:bg-heroSvg1 bg-cover bg-center" style="width: 100%;" >
-        <div class="relative z-10 w-full p-8 mx-auto flex justify-center items-center">
-            <div class="py-12 w-10/12">
-                
-                <div class="bg-second w-full px-8 pt-4 pb-8 mt-3  space-y-6 rounded-sm">
+    <div class="before:content-[''] before:absolute before:bottom-0 before:left-0 before:right-0 before:bg-heroSvg2 before:bg-bottom before:bg-repeat-x before:top-0 relative bg-teamBanner  after:content-[''] after:bg-top-center after:absolute after:top-0 after:left-0 after:right-0 after:bottom-0 after:bg-heroSvg1 bg-cover bg-center" style="width: 100%;" >
+        <div class="relative z-10 w-full md:p-8 p-4 mx-auto flex justify-center items-center">
+            <div class="py-12 md:w-10/12 w-full">
+                <div class="bg-second w-full  md:px-8 px-4 pt-4 pb-8 mt-3  space-y-6 rounded-sm">
                     <div class="flex items-center gap-6">
-                        <h3 class="text-white m-0 font-semibold text-3xl font-work">
+                        <h3 class="text-white m-0 font-semibold md:text-3xl text-xl font-work">
                             Get a pet travel quote 
                         </h3>
                         <div class="w-10 h-10 ">
@@ -417,22 +427,35 @@
                         </div>
                         
                     </div>
-                    <div class="flex gap-4 items-center">
-                        <div class="bg-white rounded-sm px-3 py-3 flex items-center w-full gap-4">
+                    <div class="md:flex gap-4 space-y-2 items-center">
+                        <div class="bg-white rounded-sm px-3 py-1 flex items-center w-full gap-4">
                             <label for="from"> FROM</label>
-                            <input type="text" class="w-full outline-none" placeholder="Start typing to find a location">
+                            <input type="text" class="w-full outline-none border-none" placeholder="Start typing to find a location">
                         </div>
-                        <div class="bg-white rounded-sm px-3 py-3 flex items-center gap-4 w-full">
+                        <div class="bg-white rounded-sm px-3 py-1 flex items-center gap-4 w-full ">
                             <label for="from"> TO</label>
-                            <input type="text" class="w-full outline-none" placeholder="Start typing to find a location">
+                            <input type="text" class="w-full outline-none border-none" placeholder="Start typing to find a location">
                         </div>
-                        <div class="bg-primary rounded-sm px-6 py-3.5 flex items-center ">
-                            <button class="text-white">
+                        <div class="bg-second ring-primary ring-1 rounded-sm px-6 py-3.5 flex items-center ">
+                            <button class="text-white hidden md:block">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
                                     <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
                                   </svg>
-                                  
+                                </button>
+                            <button class="text-white md:hidden flex items-center justify-center w-full">
+                                <p class="text-center text-white font-medium text-md">Request quote</p>
                             </button>
+                        </div>
+                        
+                        <div class="bg-primary rounded-sm px-6 py-3.5 flex items-center ">
+                            <a href="{{route('track.order')}}" class="text-white md:block hidden">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+                                  </svg>                                      
+                            </a>
+                            <a href="{{route('track.order')}}" class="text-white md:hidden flex items-center justify-center w-full">
+                                <p class="text-center text-white font-medium text-md">Track order</p>                                         
+                            </a>
                         </div>
                     </div>
                 </div>

@@ -30,12 +30,12 @@
                 </h2>
                 
                 <div class="w-full max-w-[1024px] mx-auto space-y-3">
-                    <div class="item py-4 border-b border-black overflow-hidden cursor-pointer">
+                    <div class="item md:py-4 py-2 border-b border-black overflow-hidden cursor-pointer">
                         <div class="flex justify-between items-center">
-                            <h3 class="text-xl font-medium">
+                            <h3 class="md:text-xl text-lg font-medium">
                                 Is it safe for pets to fly?
                             </h3>
-                            <div class="text-primary mr-2 font-semibold text-xl border w-8 h-8 flex justify-center items-center text-center rounded-full border-2 border-primary">
+                            <div class="text-primary mr-2 font-semibold text-xl border md:w-8 md:h-8 w-6 h-6 flex justify-center items-center text-center rounded-full border-2 border-primary">
                                 +
                             </div>
                         </div>
@@ -54,12 +54,12 @@
                         </div>
                         
                     </div>
-                    <div class="item py-4 border-b border-black overflow-hidden cursor-pointer">
+                    <div class="item md:py-4 py-2 border-b border-black overflow-hidden cursor-pointer">
                         <div class="flex justify-between items-center">
-                            <h3 class="text-xl font-medium">
+                            <h3 class="md:text-xl text-lg font-medium">
                                 What about “snub nose” (brachycephalic) breeds?
                             </h3>
-                            <div class="text-primary mr-2 font-semibold text-xl border w-8 h-8 flex justify-center items-center text-center rounded-full border-2 border-primary">
+                            <div class="text-primary mr-2 font-semibold text-xl border md:w-8 md:h-8 w-6 h-6 flex justify-center items-center text-center rounded-full border-2 border-primary">
                                 +
                             </div>
                         </div>
@@ -89,12 +89,12 @@
                         </div>
                         
                     </div>
-                    <div class="item py-4 border-b border-black overflow-hidden cursor-pointer">
+                    <div class="item md:py-4 py-2 border-b border-black overflow-hidden cursor-pointer">
                         <div class="flex justify-between items-center">
-                            <h3 class="text-xl font-medium">
+                            <h3 class="md:text-xl text-lg font-medium">
                                 What about temperature extremes?
                             </h3>
-                            <div class="text-primary mr-2 font-semibold text-xl border w-8 h-8 flex justify-center items-center text-center rounded-full border-2 border-primary">
+                            <div class="text-primary mr-2 font-semibold text-xl border md:w-8 md:h-8 w-6 h-6 flex justify-center items-center text-center rounded-full border-2 border-primary">
                                 +
                             </div>
                         </div>
@@ -125,12 +125,12 @@
                         </div>
                         
                     </div>
-                    <div class="item py-4 border-b border-black overflow-hidden cursor-pointer">
+                    <div class="item md:py-4 py-2 border-b border-black overflow-hidden cursor-pointer">
                         <div class="flex justify-between items-center">
-                            <h3 class="text-xl font-medium">
+                            <h3 class="md:text-xl text-lg font-medium">
                                 Should my pet be tranquilized or sedated for the trip?
                             </h3>
-                            <div class="text-primary mr-2 font-semibold text-xl border w-8 h-8 flex justify-center items-center text-center rounded-full border-2 border-primary">
+                            <div class="text-primary mr-2 font-semibold text-xl border md:w-8 md:h-8 w-6 h-6 flex justify-center items-center text-center rounded-full border-2 border-primary">
                                 +
                             </div>
                         </div>
@@ -153,12 +153,12 @@
                         </div>
                         
                     </div>
-                    <div class="item py-4 border-b border-black overflow-hidden cursor-pointer">
+                    <div class="item md:py-4 py-2 border-b border-black overflow-hidden cursor-pointer">
                         <div class="flex justify-between items-center">
-                            <h3 class="text-xl font-medium">
+                            <h3 class="md:text-xl text-lg font-medium">
                                 Will my pet need to change planes?
                             </h3>
-                            <div class="text-primary mr-2 font-semibold text-xl border w-8 h-8 flex justify-center items-center text-center rounded-full border-2 border-primary">
+                            <div class="text-primary mr-2 font-semibold text-xl border md:w-8 md:h-8 w-6 h-6 flex justify-center items-center text-center rounded-full border-2 border-primary">
                                 +
                             </div>
                         </div>
@@ -178,12 +178,12 @@
                         </div>
                         
                     </div>
-                    <div class="item py-4 border-b border-black overflow-hidden cursor-pointer">
+                    <div class="item md:py-4 py-2 border-b border-black overflow-hidden cursor-pointer">
                         <div class="flex justify-between items-center">
-                            <h3 class="text-xl font-medium">
+                            <h3 class="md:text-xl text-lg font-medium">
                                 Can I take my pet on vacation with me?
                             </h3>
-                            <div class="text-primary mr-2 font-semibold text-xl border w-8 h-8 flex justify-center items-center text-center rounded-full border-2 border-primary">
+                            <div class="text-primary mr-2 font-semibold text-xl border md:w-8 md:h-8 w-6 h-6 flex justify-center items-center text-center rounded-full border-2 border-primary">
                                 +
                             </div>
                         </div>
@@ -200,12 +200,12 @@
                         </div>
                         
                     </div>
-                    <div class="item py-4 border-b border-black overflow-hidden cursor-pointer">
+                    <div class="item md:py-4 py-2 border-b border-black overflow-hidden cursor-pointer">
                         <div class="flex justify-between items-center">
-                            <h3 class="text-xl font-medium">
+                            <h3 class="md:text-xl text-lg font-medium">
                                 Will my pet have food and water during the journey?
                             </h3>
-                            <div class="text-primary mr-2 font-semibold text-xl border w-8 h-8 flex justify-center items-center text-center rounded-full border-2 border-primary">
+                            <div class="text-primary mr-2 font-semibold text-xl border md:w-8 md:h-8 w-6 h-6 flex justify-center items-center text-center rounded-full border-2 border-primary">
                                 +
                             </div>
                         </div>
@@ -225,12 +225,12 @@
                         </div>
                         
                     </div>
-                    <div class="item py-4 border-b border-black overflow-hidden cursor-pointer">
+                    <div class="item md:py-4 py-2 border-b border-black overflow-hidden cursor-pointer">
                         <div class="flex justify-between items-center">
-                            <h3 class="text-xl font-medium">
+                            <h3 class="md:text-xl text-lg font-medium">
                                 May I send personal belongings with my pet?
                             </h3>
-                            <div class="text-primary mr-2 font-semibold text-xl border w-8 h-8 flex justify-center items-center text-center rounded-full border-2 border-primary">
+                            <div class="text-primary mr-2 font-semibold text-xl border md:w-8 md:h-8 w-6 h-6 flex justify-center items-center text-center rounded-full border-2 border-primary">
                                 +
                             </div>
                         </div>
@@ -246,12 +246,12 @@
                         </div>
                         
                     </div>
-                    <div class="item py-4 border-b border-black overflow-hidden cursor-pointer">
+                    <div class="item md:py-4 py-2 border-b border-black overflow-hidden cursor-pointer">
                         <div class="flex justify-between items-center">
-                            <h3 class="text-xl font-medium">
+                            <h3 class="md:text-xl text-lg font-medium">
                                 What if my pet needs to urinate during the flight?
                             </h3>
-                            <div class="text-primary mr-2 font-semibold text-xl border w-8 h-8 flex justify-center items-center text-center rounded-full border-2 border-primary">
+                            <div class="text-primary mr-2 font-semibold text-xl border md:w-8 md:h-8 w-6 h-6 flex justify-center items-center text-center rounded-full border-2 border-primary">
                                 +
                             </div>
                         </div>
@@ -268,12 +268,12 @@
                         
                     </div>
                     
-                    <div class="item py-4 border-b border-black overflow-hidden cursor-pointer">
+                    <div class="item md:py-4 py-2 border-b border-black overflow-hidden cursor-pointer">
                         <div class="flex justify-between items-center">
-                            <h3 class="text-xl font-medium">
+                            <h3 class="md:text-xl text-lg font-medium">
                                 Is it better to book a layover for long haul relocations?
                             </h3>
-                            <div class="text-primary mr-2 font-semibold text-xl border w-8 h-8 flex justify-center items-center text-center rounded-full border-2 border-primary">
+                            <div class="text-primary mr-2 font-semibold text-xl border md:w-8 md:h-8 w-6 h-6 flex justify-center items-center text-center rounded-full border-2 border-primary">
                                 +
                             </div>
                         </div>
@@ -292,12 +292,12 @@
                         </div>
                         
                     </div>
-                    <div class="item py-4 border-b border-black overflow-hidden cursor-pointer">
+                    <div class="item md:py-4 py-2 border-b border-black overflow-hidden cursor-pointer">
                         <div class="flex justify-between items-center">
-                            <h3 class="text-xl font-medium">
+                            <h3 class="md:text-xl text-lg font-medium">
                                 What happens if my pet is sick?
                             </h3>
-                            <div class="text-primary mr-2 font-semibold text-xl border w-8 h-8 flex justify-center items-center text-center rounded-full border-2 border-primary">
+                            <div class="text-primary mr-2 font-semibold text-xl border md:w-8 md:h-8 w-6 h-6 flex justify-center items-center text-center rounded-full border-2 border-primary">
                                 +
                             </div>
                         </div>
@@ -316,12 +316,12 @@
                         </div>
                         
                     </div>
-                    <div class="item py-4 border-b border-black overflow-hidden cursor-pointer">
+                    <div class="item md:py-4 py-2 border-b border-black overflow-hidden cursor-pointer">
                         <div class="flex justify-between items-center">
-                            <h3 class="text-xl font-medium">
+                            <h3 class="md:text-xl text-lg font-medium">
                                 What is the EU 5 day rule?
                             </h3>
-                            <div class="text-primary mr-2 font-semibold text-xl border w-8 h-8 flex justify-center items-center text-center rounded-full border-2 border-primary">
+                            <div class="text-primary mr-2 font-semibold text-xl border md:w-8 md:h-8 w-6 h-6 flex justify-center items-center text-center rounded-full border-2 border-primary">
                                 +
                             </div>
                         </div>
@@ -340,12 +340,12 @@
                         </div>
                         
                     </div>
-                    <div class="item py-4 border-b border-black overflow-hidden cursor-pointer">
+                    <div class="item md:py-4 py-2 border-b border-black overflow-hidden cursor-pointer">
                         <div class="flex justify-between items-center">
-                            <h3 class="text-xl font-medium">
+                            <h3 class="md:text-xl text-lg font-medium">
                                 Should I take my pet for a health assessment before travel?
                             </h3>
-                            <div class="text-primary mr-2 font-semibold text-xl border w-8 h-8 flex justify-center items-center text-center rounded-full border-2 border-primary">
+                            <div class="text-primary mr-2 font-semibold text-xl border md:w-8 md:h-8 w-6 h-6 flex justify-center items-center text-center rounded-full border-2 border-primary">
                                 +
                             </div>
                         </div>
@@ -370,12 +370,12 @@
                         </div>
                         
                     </div>
-                    <div class="item py-4 border-b border-black overflow-hidden cursor-pointer">
+                    <div class="item md:py-4 py-2 border-b border-black overflow-hidden cursor-pointer">
                         <div class="flex justify-between items-center">
-                            <h3 class="text-xl font-medium">
+                            <h3 class="md:text-xl text-lg font-medium">
                                 Should I take my pet for a health assessment before travel?
                             </h3>
-                            <div class="text-primary mr-2 font-semibold text-xl border w-8 h-8 flex justify-center items-center text-center rounded-full border-2 border-primary">
+                            <div class="text-primary mr-2 font-semibold text-xl border md:w-8 md:h-8 w-6 h-6 flex justify-center items-center text-center rounded-full border-2 border-primary">
                                 +
                             </div>
                         </div>
@@ -400,12 +400,12 @@
                         </div>
                         
                     </div>
-                    <div class="item py-4 border-b border-black overflow-hidden cursor-pointer">
+                    <div class="item md:py-4 py-2 border-b border-black overflow-hidden cursor-pointer">
                         <div class="flex justify-between items-center">
-                            <h3 class="text-xl font-medium">
+                            <h3 class="md:text-xl text-lg font-medium">
                                 Will my pet need to be quarantined?
                             </h3>
-                            <div class="text-primary mr-2 font-semibold text-xl border w-8 h-8 flex justify-center items-center text-center rounded-full border-2 border-primary">
+                            <div class="text-primary mr-2 font-semibold text-xl border md:w-8 md:h-8 w-6 h-6 flex justify-center items-center text-center rounded-full border-2 border-primary">
                                 +
                             </div>
                         </div>
@@ -430,12 +430,12 @@
                         </div>
                         
                     </div>
-                    <div class="item py-4 border-b border-black overflow-hidden cursor-pointer">
+                    <div class="item md:py-4 py-2 border-b border-black overflow-hidden cursor-pointer">
                         <div class="flex justify-between items-center">
-                            <h3 class="text-xl font-medium">
+                            <h3 class="md:text-xl text-lg font-medium">
                                 How do I find out the requirements of my destination country?
                             </h3>
-                            <div class="text-primary mr-2 font-semibold text-xl border w-8 h-8 flex justify-center items-center text-center rounded-full border-2 border-primary">
+                            <div class="text-primary mr-2 font-semibold text-xl border md:w-8 md:h-8 w-6 h-6 flex justify-center items-center text-center rounded-full border-2 border-primary">
                                 +
                             </div>
                         </div>
@@ -451,12 +451,12 @@
                         </div>
                         
                     </div>
-                    <div class="item py-4 border-b border-black overflow-hidden cursor-pointer">
+                    <div class="item md:py-4 py-2 border-b border-black overflow-hidden cursor-pointer">
                         <div class="flex justify-between items-center">
-                            <h3 class="text-xl font-medium">
+                            <h3 class="md:text-xl text-lg font-medium">
                                 Is there a time of year most suited to pet travel?
                             </h3>
-                            <div class="text-primary mr-2 font-semibold text-xl border w-8 h-8 flex justify-center items-center text-center rounded-full border-2 border-primary">
+                            <div class="text-primary mr-2 font-semibold text-xl border md:w-8 md:h-8 w-6 h-6 flex justify-center items-center text-center rounded-full border-2 border-primary">
                                 +
                             </div>
                         </div>
@@ -475,12 +475,12 @@
                         </div>
                         
                     </div>
-                    <div class="item py-4 border-b border-black overflow-hidden cursor-pointer">
+                    <div class="item md:py-4 py-2 border-b border-black overflow-hidden cursor-pointer">
                         <div class="flex justify-between items-center">
-                            <h3 class="text-xl font-medium">
+                            <h3 class="md:text-xl text-lg font-medium">
                                 Does someone check on my pet during the flight?
                             </h3>
-                            <div class="text-primary mr-2 font-semibold text-xl border w-8 h-8 flex justify-center items-center text-center rounded-full border-2 border-primary">
+                            <div class="text-primary mr-2 font-semibold text-xl border md:w-8 md:h-8 w-6 h-6 flex justify-center items-center text-center rounded-full border-2 border-primary">
                                 +
                             </div>
                         </div>
@@ -503,10 +503,9 @@
     <div class="before:content-[''] before:absolute before:bottom-0 before:left-0 before:right-0 before:bg-heroSvg2 before:bg-bottom before:bg-repeat-x before:top-0 relative bg-teamBanner  after:content-[''] after:bg-top-center after:absolute after:top-0 after:left-0 after:right-0 after:bottom-0 after:bg-heroSvg1 bg-cover bg-center" style="width: 100%;" >
         <div class="relative z-10 w-full p-8 mx-auto flex justify-center items-center">
             <div class="py-12 w-10/12">
-                
-                <div class="bg-second w-full px-8 pt-4 pb-8 mt-3  space-y-6 rounded-sm">
+                <div class="bg-second w-full  md:px-8 px-4 pt-4 pb-8 mt-3  space-y-6 rounded-sm">
                     <div class="flex items-center gap-6">
-                        <h3 class="text-white m-0 font-semibold text-3xl font-work">
+                        <h3 class="text-white m-0 font-semibold md:text-3xl text-xl font-work">
                             Get a pet travel quote 
                         </h3>
                         <div class="w-10 h-10 ">
@@ -514,22 +513,35 @@
                         </div>
                         
                     </div>
-                    <div class="flex gap-4 items-center">
-                        <div class="bg-white rounded-sm px-3 py-3 flex items-center w-full gap-4">
+                    <div class="md:flex gap-4 space-y-2 items-center">
+                        <div class="bg-white rounded-sm px-3 py-1 flex items-center w-full gap-4">
                             <label for="from"> FROM</label>
-                            <input type="text" class="w-full outline-none" placeholder="Start typing to find a location">
+                            <input type="text" class="w-full outline-none border-none" placeholder="Start typing to find a location">
                         </div>
-                        <div class="bg-white rounded-sm px-3 py-3 flex items-center gap-4 w-full">
+                        <div class="bg-white rounded-sm px-3 py-1 flex items-center gap-4 w-full ">
                             <label for="from"> TO</label>
-                            <input type="text" class="w-full outline-none" placeholder="Start typing to find a location">
+                            <input type="text" class="w-full outline-none border-none" placeholder="Start typing to find a location">
                         </div>
-                        <div class="bg-primary rounded-sm px-6 py-3.5 flex items-center ">
-                            <button class="text-white">
+                        <div class="bg-second ring-primary ring-1 rounded-sm px-6 py-3.5 flex items-center ">
+                            <button class="text-white hidden md:block">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
                                     <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
                                   </svg>
-                                  
+                                </button>
+                            <button class="text-white md:hidden flex items-center justify-center w-full">
+                                <p class="text-center text-white font-medium text-md">Request quote</p>
                             </button>
+                        </div>
+                        
+                        <div class="bg-primary rounded-sm px-6 py-3.5 flex items-center ">
+                            <a href="{{route('track.order')}}" class="text-white md:block hidden">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+                                  </svg>                                      
+                            </a>
+                            <a href="{{route('track.order')}}" class="text-white md:hidden flex items-center justify-center w-full">
+                                <p class="text-center text-white font-medium text-md">Track order</p>                                         
+                            </a>
                         </div>
                     </div>
                 </div>
