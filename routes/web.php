@@ -7,6 +7,8 @@ use App\Http\Controllers\PartnerController;
 use App\Http\Controllers\FaqController;
 use App\Http\Controllers\OrderController;
 use App\Http\Controllers\TrackingController;
+
+use App\Models\State;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -25,6 +27,9 @@ Route::post('/admin/order', [OrderController::class, 'store'])->name('store.orde
 Route::get('/admin/order/view', [OrderController::class, 'index'])->name('view.orders');
 Route::get('/admin/order/edit/{id}', [OrderController::class, 'editForm'])->name('edit.order');
 Route::put('/admin/order/update/{order}', [OrderController::class, 'edit'])->name('update.order');
+Route::get('/admin/state/update/{orderid}', [TrackingController::class, 'formState'])->name('state.form');
+Route::put('/admin/order/state/{State::status}', [TrackingController::class, 'setState'])->name('state.set');
+
 
 Route::get('/', 
     [HomeController::class, 'index']
@@ -39,4 +44,4 @@ Route::get('/faqs',
     [FaqController::class, 'index']
 )->name('faq');
 Route::get('/tracking', [TrackingController::class, 'index'])->name('track');
-Route::post('/tracking', [TrackingController::class, 'trackOrder'])->name('track.order');
+Route::post('/tracking/map', [TrackingController::class, 'trackOrder'])->name('track.order');

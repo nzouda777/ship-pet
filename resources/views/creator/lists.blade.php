@@ -79,11 +79,11 @@
                         {{ $order->totalFreight }}
                     </td>
                     <td class="px-6 py-4">
-                       {{ $order->statut ?? "pending" }}
+                        <a href="{{ route('state.form', $order->order_id)}}"  class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit status</a>
                     </td>
                     <td class="px-6 py-4">
                         <!-- Modal toggle -->
-                        <a href="{{ route('edit.order', $order->id)}}" type="button" data-modal-target="editUserModal" data-modal-show="editUserModal" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit order</a>
+                        <a href="{{ route('edit.order', $order->id)}}"  class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit order</a>
                     </td>
                 </tr>
                 @endforeach
@@ -161,7 +161,7 @@
 
 @endsection
 @section('footer')
-    Master &copy; 2022
+  
 @endsection
 @push('scripts.footer')
     <script src="https://code.jquery.com/jquery.min.js"></script>

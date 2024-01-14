@@ -1,7 +1,7 @@
-<nav class="bg-second w-full md:block hidden text-white px-4 py-2">
+<nav class="bg-white w-full md:block hidden text-second px-4 py-2">
     <div class="flex justify-between w-full items-center">
         <div class="logo w-10/12">
-            <a href="route('home')">
+            <a href="{{route('home')}}">
                 <img src="https://pet-express.com/wp-content/themes/pet-express/components/assets/images/pxp_logo.png" class="w-34 h-12" alt="">
             </a>
         </div>
@@ -25,11 +25,11 @@
 </div>    
 </nav>
 
-<nav  class=" w-full !top-0 fixed !z-50 text-white  md:hidden block">
-    <div class="bg-second relative  justify-between py-4 px-4 w-full">
+<nav  class=" w-full !top-0 fixed !z-50 text-white   md:hidden block">
+    <div class="bg-second relative  justify-between py-4 px-4  w-full">
         <div class="flex justify-between items-center">
             <div class="logo w-10/12">
-                <a href="route('home')">
+                <a href="{{route('home')}}">
                     <img src="https://pet-express.com/wp-content/themes/pet-express/components/assets/images/pxp_logo.png" class="w-34 h-12" alt="">
                 </a>
             </div>
@@ -47,8 +47,8 @@
             </div>
         </div>
     
-    <div id="menu" class="w-6/12 bg-second absolute py-5 px-4 space-y-3">
-        <ul class=" gap-8 justify-between">
+    <div id="menu" class="w-screen left-0 h-screen bg-second absolute py-5 px-4 space-y-3">
+        <ul class=" gap-8 flex flex-col items-center justify-between">
             <li class="py-2">
                 <a href="{{route('home')}}" class="w-full hover:text-primary inline-block">Home</a>
             </li>
@@ -72,7 +72,7 @@
 
     }
     #menu{
-        transform: translateX(200%);
+        transform: translateX(100%);
         transition: transform 1s;
 
     }
@@ -81,26 +81,26 @@
     const open = document.querySelector(".open")
     const close = document.querySelector(".close")
     open.onclick = () => {
-        if (document.querySelector("#menu").style.transform == "translateX(200%)") {
+        if (document.querySelector("#menu").style.transform == "translateX(100%)") {
          
         open.style.display = "none"
-        document.querySelector("#menu").style.transform = "translateX(100%)"
+        document.querySelector("#menu").style.transform = "translateX(0%)"
         close.style.display = "block"   
         } else {
         open.style.display = "block"
-        document.querySelector("#menu").style.transform = "translateX(200%)"
+        document.querySelector("#menu").style.transform = "translateX(100%)"
         close.style.display = "none"
         }
     }
     close.onclick = () => {
-        if (document.querySelector("#menu").style.transform == "translateX(200%)") {
+        if (document.querySelector("#menu").style.transform == "translateX(0%)") {
          
         close.style.display = "none"
         document.querySelector("#menu").style.transform = "translateX(100%)"
         open.style.display = "block"   
         } else {
         close.style.display = "block"
-        document.querySelector("#menu").style.transform = "translateX(200%)"
+        document.querySelector("#menu").style.transform = "translateX(100%)"
         open.style.display = "none"
         }
     }

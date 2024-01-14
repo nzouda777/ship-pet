@@ -349,7 +349,7 @@
             </div>
 
             <div class="flex w-full items-center justify-center">
-                <input type="submit" value="Create order" class="bg-blue-400 py-3 px-4 inline-block">
+                <input type="submit" value="Create order" class="bg-primary py-3 text-white w-full cursor-pointer py-4 inline-block">
             </div>
         </form>
     </div>

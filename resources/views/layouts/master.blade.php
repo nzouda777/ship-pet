@@ -13,7 +13,7 @@
     @stack('scripts.header')
     @vite('resources/css/app.css')
 @vite('resources/css/vimeo.css')
-    <title>Demo - {{ $title ?? 'demo' }}</title>
+    <title>Pet-Express - {{ $title ?? 'PetExpress' }}</title>
 </head>
 <body class="mx-auto font-work w-full max-w-screen-4xl">
     @include('layouts.partials._nav')

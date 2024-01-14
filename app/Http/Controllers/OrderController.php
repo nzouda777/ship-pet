@@ -6,6 +6,8 @@ use Illuminate\Http\Request;
 use App\Http\Requests\OrderRequest;
 use Illuminate\Validation\Rule;
 use App\Models\Order;
+use App\Models\State;
+
 
 class OrderController extends Controller
 {
@@ -16,7 +18,7 @@ class OrderController extends Controller
         return view('creator.create');
     }
     public function index(){
-        $orders = Order::paginate(10);
+        $orders = Order::paginate(10)->sortBy('ASC');
         return view('creator.lists', compact('orders'));
     }
 
@@ -51,9 +53,26 @@ class OrderController extends Controller
             "carrierRef" => 'required',
             "paymentMode" => 'required'
         ]);
-        $order['order_id'] = rand()."-PetExpress";
+        $order_id = rand()."-PetExpress";
+        $order['order_id'] = $order_id;
         // dd($order);
-         Order::create($order); 
+         Order::create($order);
+        
+         $state = State::forceCreate([
+            "order_id" => $order_id,
+            "order_confirmed" => "",
+            "order_time" => "" ,
+            "in_transit" => "" ,
+            "in_trans_time" => "" ,
+            "in_transit_latest" => "" ,
+            "in_trans_lat_time" => "" ,
+            "arrived" => "" ,
+            "arrived_time" => "" ,
+            "out_for_delivery" => "" ,
+            "out_for_delivery_time" => "",  
+            "delivery" => "",
+            "delivery_time" => ""
+         ]);
         return redirect('/admin/order/view');
     }
 
