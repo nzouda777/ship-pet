@@ -10,6 +10,10 @@
             <li class="inline-block">
                 <a href="{{route('home')}}" class="w-full hover:text-primary" >Home</a>
             </li>
+            
+            <li class="inline-block">
+                <a href="{{route('faq')}}" class="w-full hover:text-primary">Faqs</a>
+            </li>
             <li class="inline-block">
                 <a href="{{route('team')}}" class="w-full hover:text-primary">Team</a>
             </li>
@@ -51,6 +55,10 @@
         <ul class=" gap-8 flex flex-col items-center justify-between">
             <li class="py-2">
                 <a href="{{route('home')}}" class="w-full hover:text-primary inline-block">Home</a>
+            </li>
+            
+            <li class="py-2">
+                <a href="{{route('faq')}}" class="w-full hover:text-primary inline-block">Faqs</a>
             </li>
             <li class="py-2">
                 <a href="{{route('team')}}" class="w-full hover:text-primary inline-block">Team</a>

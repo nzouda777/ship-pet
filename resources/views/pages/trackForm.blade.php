@@ -1,4 +1,4 @@
-@extends('layouts.master', ['title' => 'Team'])
+@extends('layouts.master', ['title' => 'Tracking'])
 <style>
     .element{
         transition: height 1s;
@@ -69,7 +69,7 @@
                                     status-pending
                                 @endif
                                 
-                                @if (!empty($status->in_transit) && empty($status->in_trans_latest) )
+                                @if (!empty($status->in_transit) && empty($status->in_transit_latest) )
                             
                                     status-active
                                 @endif

@@ -1,4 +1,4 @@
-@extends('layouts.master', ['title' => 'Faqs'])
+@extends('layouts.master', ['title' => 'Status form'])
 <style>
     .element{
         transition: display 1s;
